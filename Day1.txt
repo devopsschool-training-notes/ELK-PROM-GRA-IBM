@@ -45,7 +45,12 @@ Step 3 - Login to machine
 User name - centos
 https://www.devopsschool.com/blog/install-and-configure-elasticsearch-step-by-step-guide/
 
-
+Rajnikanth Reddy B		3.109.132.184
+Takhellambam Hemanta Singh	15.206.92.131
+Sandeep Singh			65.0.102.86
+Shoaib Mohammad			52.66.207.7
+Sanjay Lodhe			3.110.32.206
+Anajan				13.232.21.210
 
 
 
