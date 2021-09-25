@@ -1,0 +1,111 @@
+Day2
+-------------------------
+ELK Setup	
+ElasticSearch multi Node Clustor Setup
+Obserbability
+
+Day3
+-------------------------
+
+Kibana
+DSL
+  
+Rajnikanth Reddy B		13.232.118.49
+Takhellambam Hemanta Singh	13.234.186.237
+Sandeep Singh			13.232.180.187
+Shoaib Mohammad			13.232.107.101
+Sanjay Lodhe			13.232.237.153
+koona anjaneyulu		65.0.130.180
+
+---------------------------
+filebeat
+-----------
+	yml
+		1 SOURCE --> OUTPUT
+		2 SOURCE --> OUTPUT
+		3 SOURCE --> OUTPUT
+
+---------------------------
+met
+-----------
+	yml
+		1 apache --> OUTPUT
+		2 system --> OUTPUT
+		3 SOURCE --> OUTPUT
+
+
+=======================================================================
+How to install & configure elastic fileBeats?
+https://www.devopsschool.com/blog/how-to-install-configure-elastic-filebeats/
+
+
+
+How to Install and configure elastic Logstash?
+--------------------------------------------
+Step 1 - Download a Latest version of logstash.
+- https://www.elastic.co/downloads/logstash
+
+wget https://artifacts.elastic.co/downloads/logstash/logstash-7.15.0-linux-x86_64.tar.gz
+tar -zxvf logstash-7.15.0-linux-x86_64.tar.gz
+cd logstash-7.15.0
+
+Step 2 - 
+
+vi logstash-7.2.0/first-pipeline.conf
+
+input {
+    beats {
+        port => "5044"
+    }
+}
+# The filter part of this file is commented out to indicate that it is
+# optional.
+# filter {
+#
+# }
+output {
+    stdout { codec => rubydebug }
+}
+
+=============================================
+To verify your configuration, run the following command:
+$ bin/logstash -f first-pipeline.conf --config.test_and_exit
+The --config.test_and_exit option parses your configuration file and reports any errors.
+
+=======================================================
+
+If the configuration file passes the configuration test, start Logstash with the following command:
+
+bin/logstash -f first-pipeline.conf --config.reload.automatic
+
+The --config.reload.automatic option enables automatic config reloading so that you don’t have to stop and restart Logstash every time you modify the configuration file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
