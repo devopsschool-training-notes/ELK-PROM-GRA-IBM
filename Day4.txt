@@ -20,5 +20,15 @@ Extract
 Run
 
 Step 2 - Node Exporter - LINUX
+https://prometheus.io/download/
 
 Step 3 - WINDOWS Exporter - Windows
+
+- job_name: linux
+  static_configs:
+  - targets: ['65.0.102.191:9100']
+
+
+
+http://65.0.102.191:9100/metrics
+
