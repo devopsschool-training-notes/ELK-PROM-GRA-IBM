@@ -1,0 +1,24 @@
+65.0.102.191
+=======================
+15.206.160.36	BUSSI
+65.1.65.110	HEMANTHA
+65.1.85.63	SANDEEP
+13.234.17.8	SANJAY
+35.154.140.194	SHOAIB
+
+-- Linux
+-- Windows
+https://prometheus.io/docs/instrumenting/exporters/
+
+Step 1  - Prom Server
+https://www.devopsschool.com/blog/install-and-configure-prometheus-server-and-node-exporter-in-rhel/
+
+Download 
+https://prometheus.io/download/
+
+Extract
+Run
+
+Step 2 - Node Exporter - LINUX
+
+Step 3 - WINDOWS Exporter - Windows
